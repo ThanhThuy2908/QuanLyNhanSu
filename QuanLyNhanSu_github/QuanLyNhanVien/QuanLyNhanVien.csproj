@@ -73,17 +73,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="HoSoNV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HoSoNV.Designer.cs">
-      <DependentUpon>HoSoNV.cs</DependentUpon>
-    </Compile>
     <Compile Include="KetNoi.cs" />
     <Compile Include="Luong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Luong.Designer.cs">
+    <Compile Include="Luong.designer.cs">
       <DependentUpon>Luong.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -96,9 +90,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HoSoNV.resx">
-      <DependentUpon>HoSoNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Luong.resx">
       <DependentUpon>Luong.cs</DependentUpon>

@@ -45,6 +45,11 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.textNgay6 = new DevExpress.XtraEditors.DateEdit();
@@ -143,11 +148,6 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabDanhMuc = new System.Windows.Forms.TabControl();
-            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textNgayKT7.Properties.CalendarTimeProperties)).BeginInit();
@@ -351,6 +351,41 @@
             this.dataGridView7.RowTemplate.Height = 24;
             this.dataGridView7.Size = new System.Drawing.Size(799, 255);
             this.dataGridView7.TabIndex = 13;
+            // 
+            // Column20
+            // 
+            this.Column20.DataPropertyName = "MaNhanVien";
+            this.Column20.HeaderText = "Mã nhân viên";
+            this.Column20.Name = "Column20";
+            this.Column20.Width = 150;
+            // 
+            // Column21
+            // 
+            this.Column21.DataPropertyName = "MaBaoHiem";
+            this.Column21.HeaderText = "Mã bảo hiểm";
+            this.Column21.Name = "Column21";
+            this.Column21.Width = 150;
+            // 
+            // Column22
+            // 
+            this.Column22.DataPropertyName = "NgayBatDau";
+            this.Column22.HeaderText = "Ngày bắt đầu";
+            this.Column22.Name = "Column22";
+            this.Column22.Width = 150;
+            // 
+            // Column23
+            // 
+            this.Column23.DataPropertyName = "NgayHetHan";
+            this.Column23.HeaderText = "Ngày hết hạn";
+            this.Column23.Name = "Column23";
+            this.Column23.Width = 150;
+            // 
+            // Column24
+            // 
+            this.Column24.DataPropertyName = "SoTienDongMotThang";
+            this.Column24.HeaderText = "Số tiền đóng/tháng";
+            this.Column24.Name = "Column24";
+            this.Column24.Width = 150;
             // 
             // tabPage1
             // 
@@ -1252,41 +1287,6 @@
             this.tabDanhMuc.SelectedIndex = 0;
             this.tabDanhMuc.Size = new System.Drawing.Size(1059, 748);
             this.tabDanhMuc.TabIndex = 0;
-            // 
-            // Column20
-            // 
-            this.Column20.DataPropertyName = "MaNhanVien";
-            this.Column20.HeaderText = "Mã nhân viên";
-            this.Column20.Name = "Column20";
-            this.Column20.Width = 150;
-            // 
-            // Column21
-            // 
-            this.Column21.DataPropertyName = "MaBaoHiem";
-            this.Column21.HeaderText = "Mã bảo hiểm";
-            this.Column21.Name = "Column21";
-            this.Column21.Width = 150;
-            // 
-            // Column22
-            // 
-            this.Column22.DataPropertyName = "NgayBatDau";
-            this.Column22.HeaderText = "Ngày bắt đầu";
-            this.Column22.Name = "Column22";
-            this.Column22.Width = 150;
-            // 
-            // Column23
-            // 
-            this.Column23.DataPropertyName = "NgayHetHan";
-            this.Column23.HeaderText = "Ngày hết hạn";
-            this.Column23.Name = "Column23";
-            this.Column23.Width = 150;
-            // 
-            // Column24
-            // 
-            this.Column24.DataPropertyName = "SoTienDongMotThang";
-            this.Column24.HeaderText = "Số tiền đóng/tháng";
-            this.Column24.Name = "Column24";
-            this.Column24.Width = 150;
             // 
             // DanhMuc
             // 

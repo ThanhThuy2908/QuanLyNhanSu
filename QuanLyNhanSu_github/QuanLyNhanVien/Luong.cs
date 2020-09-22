@@ -11,12 +11,12 @@ using DevExpress.XtraEditors;
 
 namespace QuanLyNhanVien
 {
-    public partial class DanhMuc : DevExpress.XtraEditors.XtraForm
+    public partial class Luong : DevExpress.XtraEditors.XtraForm
     {
-        public DanhMuc()
+        public Luong()
         {
             InitializeComponent();
         }
+      
     }
-    
 }
