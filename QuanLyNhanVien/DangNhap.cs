@@ -21,8 +21,20 @@ namespace QuanLyNhanVien
 
         private void butDangNhap_Click(object sender, EventArgs e)
         {
-           
-          
+            KetNoi kn = new KetNoi();
+            DataTable dt = kn.LoadDataUser(textDangNhap.Text, textMK.Text);
+            if (dt.Rows.Count == 1)
+            {
+                this.Hide();
+                Form1 f1 = new Form1();
+                f1.ShowDialog();
+            }
+            else
+            {
+                XtraMessageBox.Show("Mật khẩu hoặc tên đăng nhập không đúng");
+            }
+
+
         }
 
         private void ShowMK_CheckedChanged(object sender, EventArgs e)
