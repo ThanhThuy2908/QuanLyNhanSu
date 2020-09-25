@@ -84,7 +84,7 @@ namespace QuanLyNhanVien
                 try
                 {
                     if (kn.LoadDataDK("BaoHiemDK", "@MaBH", textMaBH3.Text).Rows.Count == 0)
-                        XtraMessageBox.Show("Không tìm thấy mã Bảo hiểm để xóa ");
+                        XtraMessageBox.Show("Không tìm thấy mã Bảo hiểm để xóa");
                     else
                     {
                         kn.Xoa("XoaBH", "@MaBH", textMaBH3.Text);
