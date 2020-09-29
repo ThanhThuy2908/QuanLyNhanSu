@@ -117,17 +117,17 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPhongBan = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.butThem2 = new DevExpress.XtraEditors.SimpleButton();
+            this.butThemPhongBan = new DevExpress.XtraEditors.SimpleButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.butSua2 = new DevExpress.XtraEditors.SimpleButton();
+            this.butSuaPhongBan = new DevExpress.XtraEditors.SimpleButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.butXoa2 = new DevExpress.XtraEditors.SimpleButton();
+            this.butXoaPhongBan = new DevExpress.XtraEditors.SimpleButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.butLuu2 = new DevExpress.XtraEditors.SimpleButton();
-            this.textMaPB2 = new System.Windows.Forms.TextBox();
-            this.textSDT = new System.Windows.Forms.TextBox();
-            this.textTenPB2 = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.butLuuPhongBan = new DevExpress.XtraEditors.SimpleButton();
+            this.textMaPBPhongBan = new System.Windows.Forms.TextBox();
+            this.textSDTPhongBan = new System.Windows.Forms.TextBox();
+            this.textTenPBPhongBan = new System.Windows.Forms.TextBox();
+            this.dataGridViewPhongBan = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -171,7 +171,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPhongBan.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhongBan)).BeginInit();
             this.tabChucVu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewChucVu)).BeginInit();
@@ -1009,7 +1009,7 @@
             // tabPhongBan
             // 
             this.tabPhongBan.Controls.Add(this.panel2);
-            this.tabPhongBan.Controls.Add(this.dataGridView2);
+            this.tabPhongBan.Controls.Add(this.dataGridViewPhongBan);
             this.tabPhongBan.Location = new System.Drawing.Point(4, 25);
             this.tabPhongBan.Name = "tabPhongBan";
             this.tabPhongBan.Padding = new System.Windows.Forms.Padding(3);
@@ -1021,28 +1021,28 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Lavender;
-            this.panel2.Controls.Add(this.butThem2);
+            this.panel2.Controls.Add(this.butThemPhongBan);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.butSua2);
+            this.panel2.Controls.Add(this.butSuaPhongBan);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.butXoa2);
+            this.panel2.Controls.Add(this.butXoaPhongBan);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.butLuu2);
-            this.panel2.Controls.Add(this.textMaPB2);
-            this.panel2.Controls.Add(this.textSDT);
-            this.panel2.Controls.Add(this.textTenPB2);
+            this.panel2.Controls.Add(this.butLuuPhongBan);
+            this.panel2.Controls.Add(this.textMaPBPhongBan);
+            this.panel2.Controls.Add(this.textSDTPhongBan);
+            this.panel2.Controls.Add(this.textTenPBPhongBan);
             this.panel2.Location = new System.Drawing.Point(182, 59);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(648, 259);
             this.panel2.TabIndex = 11;
             // 
-            // butThem2
+            // butThemPhongBan
             // 
-            this.butThem2.Location = new System.Drawing.Point(85, 15);
-            this.butThem2.Name = "butThem2";
-            this.butThem2.Size = new System.Drawing.Size(94, 29);
-            this.butThem2.TabIndex = 0;
-            this.butThem2.Text = "Thêm";
+            this.butThemPhongBan.Location = new System.Drawing.Point(85, 15);
+            this.butThemPhongBan.Name = "butThemPhongBan";
+            this.butThemPhongBan.Size = new System.Drawing.Size(94, 29);
+            this.butThemPhongBan.TabIndex = 0;
+            this.butThemPhongBan.Text = "Thêm";
             // 
             // label7
             // 
@@ -1053,13 +1053,13 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Số điện thoại:";
             // 
-            // butSua2
+            // butSuaPhongBan
             // 
-            this.butSua2.Location = new System.Drawing.Point(217, 15);
-            this.butSua2.Name = "butSua2";
-            this.butSua2.Size = new System.Drawing.Size(94, 29);
-            this.butSua2.TabIndex = 1;
-            this.butSua2.Text = "Sửa";
+            this.butSuaPhongBan.Location = new System.Drawing.Point(217, 15);
+            this.butSuaPhongBan.Name = "butSuaPhongBan";
+            this.butSuaPhongBan.Size = new System.Drawing.Size(94, 29);
+            this.butSuaPhongBan.TabIndex = 1;
+            this.butSuaPhongBan.Text = "Sửa";
             // 
             // label6
             // 
@@ -1070,13 +1070,13 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Tên phòng ban:";
             // 
-            // butXoa2
+            // butXoaPhongBan
             // 
-            this.butXoa2.Location = new System.Drawing.Point(361, 15);
-            this.butXoa2.Name = "butXoa2";
-            this.butXoa2.Size = new System.Drawing.Size(94, 29);
-            this.butXoa2.TabIndex = 2;
-            this.butXoa2.Text = "Xóa";
+            this.butXoaPhongBan.Location = new System.Drawing.Point(361, 15);
+            this.butXoaPhongBan.Name = "butXoaPhongBan";
+            this.butXoaPhongBan.Size = new System.Drawing.Size(94, 29);
+            this.butXoaPhongBan.TabIndex = 2;
+            this.butXoaPhongBan.Text = "Xóa";
             // 
             // label5
             // 
@@ -1087,49 +1087,49 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Mã phòng ban:";
             // 
-            // butLuu2
+            // butLuuPhongBan
             // 
-            this.butLuu2.Location = new System.Drawing.Point(217, 210);
-            this.butLuu2.Name = "butLuu2";
-            this.butLuu2.Size = new System.Drawing.Size(94, 29);
-            this.butLuu2.TabIndex = 3;
-            this.butLuu2.Text = "Lưu";
+            this.butLuuPhongBan.Location = new System.Drawing.Point(217, 210);
+            this.butLuuPhongBan.Name = "butLuuPhongBan";
+            this.butLuuPhongBan.Size = new System.Drawing.Size(94, 29);
+            this.butLuuPhongBan.TabIndex = 3;
+            this.butLuuPhongBan.Text = "Lưu";
             // 
-            // textMaPB2
+            // textMaPBPhongBan
             // 
-            this.textMaPB2.Location = new System.Drawing.Point(192, 83);
-            this.textMaPB2.Name = "textMaPB2";
-            this.textMaPB2.Size = new System.Drawing.Size(263, 23);
-            this.textMaPB2.TabIndex = 4;
+            this.textMaPBPhongBan.Location = new System.Drawing.Point(192, 83);
+            this.textMaPBPhongBan.Name = "textMaPBPhongBan";
+            this.textMaPBPhongBan.Size = new System.Drawing.Size(263, 23);
+            this.textMaPBPhongBan.TabIndex = 4;
             // 
-            // textSDT
+            // textSDTPhongBan
             // 
-            this.textSDT.Location = new System.Drawing.Point(192, 169);
-            this.textSDT.Name = "textSDT";
-            this.textSDT.Size = new System.Drawing.Size(263, 23);
-            this.textSDT.TabIndex = 6;
+            this.textSDTPhongBan.Location = new System.Drawing.Point(192, 169);
+            this.textSDTPhongBan.Name = "textSDTPhongBan";
+            this.textSDTPhongBan.Size = new System.Drawing.Size(263, 23);
+            this.textSDTPhongBan.TabIndex = 6;
             // 
-            // textTenPB2
+            // textTenPBPhongBan
             // 
-            this.textTenPB2.Location = new System.Drawing.Point(192, 126);
-            this.textTenPB2.Name = "textTenPB2";
-            this.textTenPB2.Size = new System.Drawing.Size(263, 23);
-            this.textTenPB2.TabIndex = 5;
+            this.textTenPBPhongBan.Location = new System.Drawing.Point(192, 126);
+            this.textTenPBPhongBan.Name = "textTenPBPhongBan";
+            this.textTenPBPhongBan.Size = new System.Drawing.Size(263, 23);
+            this.textTenPBPhongBan.TabIndex = 5;
             // 
-            // dataGridView2
+            // dataGridViewPhongBan
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewPhongBan.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridViewPhongBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPhongBan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
             this.column6,
             this.Column7});
-            this.dataGridView2.Location = new System.Drawing.Point(155, 375);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(698, 312);
-            this.dataGridView2.TabIndex = 7;
+            this.dataGridViewPhongBan.Location = new System.Drawing.Point(155, 375);
+            this.dataGridViewPhongBan.Name = "dataGridViewPhongBan";
+            this.dataGridViewPhongBan.RowHeadersWidth = 51;
+            this.dataGridViewPhongBan.RowTemplate.Height = 24;
+            this.dataGridViewPhongBan.Size = new System.Drawing.Size(698, 312);
+            this.dataGridViewPhongBan.TabIndex = 7;
             // 
             // Column5
             // 
@@ -1357,7 +1357,7 @@
             this.tabPhongBan.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhongBan)).EndInit();
             this.tabChucVu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1429,14 +1429,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.TextBox textSDT;
-        private System.Windows.Forms.TextBox textTenPB2;
-        private System.Windows.Forms.TextBox textMaPB2;
-        private DevExpress.XtraEditors.SimpleButton butLuu2;
-        private DevExpress.XtraEditors.SimpleButton butXoa2;
-        private DevExpress.XtraEditors.SimpleButton butSua2;
-        private DevExpress.XtraEditors.SimpleButton butThem2;
+        private System.Windows.Forms.DataGridView dataGridViewPhongBan;
+        private System.Windows.Forms.TextBox textSDTPhongBan;
+        private System.Windows.Forms.TextBox textTenPBPhongBan;
+        private System.Windows.Forms.TextBox textMaPBPhongBan;
+        private DevExpress.XtraEditors.SimpleButton butLuuPhongBan;
+        private DevExpress.XtraEditors.SimpleButton butXoaPhongBan;
+        private DevExpress.XtraEditors.SimpleButton butSuaPhongBan;
+        private DevExpress.XtraEditors.SimpleButton butThemPhongBan;
         private System.Windows.Forms.TabPage tabChucVu;
         private System.Windows.Forms.TextBox textTenCVChucVu;
         private System.Windows.Forms.TextBox textPhuCapChucVu;

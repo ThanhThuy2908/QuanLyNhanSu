@@ -14,7 +14,7 @@ namespace QuanLyNhanVien
     public partial class DanhMuc : DevExpress.XtraEditors.XtraForm
     {
         public static int kt1 = 0; //kiểm tra thêm sửa xóa chức vụ
-        public static int kt2 = 0;  
+        public static int kt2 = 0; //kiểm tra thêm, sửa xóa phòng ban
         public static int kt3 = 0; // kiểm tra thêm, sửa, xóa bao hiem
        
         public DanhMuc()
@@ -22,6 +22,7 @@ namespace QuanLyNhanVien
             InitializeComponent();
 
             dataGridViewChucVu.ReadOnly = true;
+            
             dataGridView3.ReadOnly = true;
             getDataChucVu();
             getData3();
