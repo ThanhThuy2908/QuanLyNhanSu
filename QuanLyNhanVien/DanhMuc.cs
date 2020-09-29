@@ -14,22 +14,23 @@ namespace QuanLyNhanVien
     public partial class DanhMuc : DevExpress.XtraEditors.XtraForm
     {
         public static int kt1 = 0; //kiểm tra thêm sửa xóa chức vụ
+        public static int kt2 = 0;  
         public static int kt3 = 0; // kiểm tra thêm, sửa, xóa bao hiem
        
         public DanhMuc()
         {
             InitializeComponent();
 
-            dataGridView1.ReadOnly = true;
+            dataGridViewChucVu.ReadOnly = true;
             dataGridView3.ReadOnly = true;
-            getData1();
+            getDataChucVu();
             getData3();
         }
 
-        public void getData1()
+        public void getDataChucVu()
         {
             KetNoi kn = new KetNoi();
-            dataGridView1.DataSource = kn.LoadData("DSChucVu");
+            dataGridViewChucVu.DataSource = kn.LoadData("DSChucVu");
         }
 
         public void getData3()
