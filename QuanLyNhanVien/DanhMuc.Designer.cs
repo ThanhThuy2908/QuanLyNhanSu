@@ -1192,6 +1192,7 @@
             this.butThemChucVu.Size = new System.Drawing.Size(94, 29);
             this.butThemChucVu.TabIndex = 7;
             this.butThemChucVu.Text = "Thêm";
+            this.butThemChucVu.Click += new System.EventHandler(this.butThemChucVu_Click);
             // 
             // textTenCVChucVu
             // 
@@ -1248,6 +1249,7 @@
             this.butLuuChucVu.Size = new System.Drawing.Size(94, 29);
             this.butLuuChucVu.TabIndex = 10;
             this.butLuuChucVu.Text = "Lưu";
+            this.butLuuChucVu.Click += new System.EventHandler(this.butLuuChucVu_Click);
             // 
             // butSuaChucVu
             // 
@@ -1256,6 +1258,7 @@
             this.butSuaChucVu.Size = new System.Drawing.Size(94, 29);
             this.butSuaChucVu.TabIndex = 8;
             this.butSuaChucVu.Text = "Sửa";
+            this.butSuaChucVu.Click += new System.EventHandler(this.butSuaChucVu_Click);
             // 
             // butXoaChucVu
             // 
@@ -1264,6 +1267,7 @@
             this.butXoaChucVu.Size = new System.Drawing.Size(94, 29);
             this.butXoaChucVu.TabIndex = 9;
             this.butXoaChucVu.Text = "Xóa";
+            this.butXoaChucVu.Click += new System.EventHandler(this.butXoaChucVu_Click);
             // 
             // dataGridViewChucVu
             // 

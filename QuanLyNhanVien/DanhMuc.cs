@@ -13,6 +13,7 @@ namespace QuanLyNhanVien
 {
     public partial class DanhMuc : DevExpress.XtraEditors.XtraForm
     {
+        //kt=0, kt=1 them, kt=2 sua, kt=3 xoa
         public static int kt1 = 0; //kiểm tra thêm sửa xóa chức vụ
         public static int kt2 = 0; //kiểm tra thêm, sửa xóa phòng ban
         public static int kt3 = 0; // kiểm tra thêm, sửa, xóa bao hiem
@@ -112,6 +113,62 @@ namespace QuanLyNhanVien
             kt3 = 0;
         }
 
+        private void butThemChucVu_Click(object sender, EventArgs e)
+        {
+            kt1 = 1; //them
+        }
+
+        private void butSuaChucVu_Click(object sender, EventArgs e)
+        {
+            kt1 = 2; //sua
+        }
+
+        private void butXoaChucVu_Click(object sender, EventArgs e)
+        {
+            kt1 = 3; //xoa
+        }
+
+        private void butLuuChucVu_Click(object sender, EventArgs e)
+        {
+            KetNoi kn = new KetNoi();
+            if (kt1 == 1)
+            {
+                if (kn.LoadDataDK("ChucVuDK", "@MaCV", textMaCVChucVu.Text).Rows.Count == 1)
+                    XtraMessageBox.Show("Mã chức vụ đã có trong danh sách");
+                else
+                {
+                    kn.ChucVu("ThemCV", textMaCVChucVu.Text, textTenCVChucVuText, textPhuCapChucVu.Text);
+                }
+            }
+            else if (kt1 == 2)
+            {
+                if (kn.LoadDataDK("ChucVuDK", "@MaCV", textMaCV.Text).Rows.Count == 0)
+                    XtraMessageBox.Show("Mã chức vụ chưa có trong danh sách");
+                else
+                {
+                    kn.ChucVu("SuaCV", textMaCV.Text, textTenCV.Text, textPhuCap.Text);
+                }
+            }
+            else if (kt1 == 3)
+            {
+                try
+                {
+                    if (kn.LoadDataDK("ChucVuDK", "@MaCV", textMaCV.Text).Rows.Count == 0)
+                        XtraMessageBox.Show("Không tìm thấy mã chức vụ để xóa ");
+                    else
+                    {
+                        kn.Xoa("XoaCV", "@MaChucVu", textMaCV.Text);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    XtraMessageBox.Show(ex.Message);
+                }
+
+            }
+            getData1();
+            kt1 = 0;
+        }
     }
 
 }
