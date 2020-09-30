@@ -137,27 +137,27 @@ namespace QuanLyNhanVien
                     XtraMessageBox.Show("Mã chức vụ đã có trong danh sách");
                 else
                 {
-                    kn.ChucVu("ThemCV", textMaCVChucVu.Text, textTenCVChucVuText, textPhuCapChucVu.Text);
+                    kn.ChucVu("ThemCV", textMaCVChucVu.Text, textTenCVChucVu.Text, textPhuCapChucVu.Text);
                 }
             }
             else if (kt1 == 2)
             {
-                if (kn.LoadDataDK("ChucVuDK", "@MaCV", textMaCV.Text).Rows.Count == 0)
+                if (kn.LoadDataDK("ChucVuDK", "@MaCV", textMaCVChucVu.Text).Rows.Count == 0)
                     XtraMessageBox.Show("Mã chức vụ chưa có trong danh sách");
                 else
                 {
-                    kn.ChucVu("SuaCV", textMaCV.Text, textTenCV.Text, textPhuCap.Text);
+                    kn.ChucVu("SuaCV", textMaCVChucVu.Text, textTenCVChucVu.Text, textPhuCapChucVu.Text);
                 }
             }
             else if (kt1 == 3)
             {
                 try
                 {
-                    if (kn.LoadDataDK("ChucVuDK", "@MaCV", textMaCV.Text).Rows.Count == 0)
+                    if (kn.LoadDataDK("ChucVuDK", "@MaCV", textMaCVChucVu.Text).Rows.Count == 0)
                         XtraMessageBox.Show("Không tìm thấy mã chức vụ để xóa ");
                     else
                     {
-                        kn.Xoa("XoaCV", "@MaChucVu", textMaCV.Text);
+                        kn.Xoa("XoaCV", "@MaChucVu", textMaCVChucVu.Text);
                     }
                 }
                 catch (Exception ex)
@@ -166,7 +166,7 @@ namespace QuanLyNhanVien
                 }
 
             }
-            getData1();
+            getDataChucVu();
             kt1 = 0;
         }
     }
